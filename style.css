@@ -1,0 +1,79 @@
+body{
+  position: relative;
+}
+.card {
+  color: white;
+  padding: 20px;
+  height: 170px;
+  text-align: center;
+  font-size: 6rem;
+  font-family: sans-serif;
+  transform-style: preserve-3d;
+  transition: background-color 0.9s ease-in-out;
+}
+
+#list {
+  max-width: 630px;
+  display: grid;
+
+}
+.light-blue{
+ background-color: #2B8EAD;
+}
+.dark-blue{
+  background-color: #2F454E ;
+ }
+ .grey-blue{
+  background-color:#6F98A8;
+ }
+ .grey{
+  background-color: #BFBFBF;
+ }
+ button{
+    background-color: #2B8EAD;
+    width: 104px;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 2px 2px 3px #efefef;
+ }
+ .rightContainer{
+  margin-top: 25px;
+ }
+
+
+
+/* Screen larger than 600px? 2 column */
+@media (min-width: 375px) {
+  #list { grid-template-columns: repeat(2, 1fr); }
+
+}
+
+
+/* Screen larger than 900px? 3 columns */
+@media (min-width: 900px) {
+  #list { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 375px) {
+  .card {
+    height: 20px;
+    background: #efefef;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 3px;
+}
+.light-blue{
+  border-left: 5px solid #2B8EAD;
+ }
+ .dark-blue{
+  border-left: 5px solid #2F454E ;
+  }
+  .grey-blue{
+    border-left: 5px solid #6F98A8;
+  }
+  .grey{
+    border-left: 5px solid #BFBFBF;
+  }
+}
